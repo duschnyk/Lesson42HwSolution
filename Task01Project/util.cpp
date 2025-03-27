@@ -89,3 +89,15 @@ int get_product_of_even_indexses(int* array, int size) {
 	return product;
 }
 
+int get_sum_of_even_elements(int* array, int size) {
+	int suumma = 0;
+
+	for (int i = 0; i < size; i++)
+	{
+		if (array[i] > 0) {
+			suumma += array[i];
+		}
+	}
+	return suumma;
+}
+

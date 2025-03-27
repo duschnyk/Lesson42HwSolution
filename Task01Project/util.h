@@ -13,3 +13,4 @@ string convert(int* array, int size);
 int get_max_and_min_element_index(int* array, int size, bool type);
 int get_product_of_even_indexses(int* array, int size);
 void normal_init(int* array, int size, int a, int b);
+int get_sum_of_even_elements(int* array, int size);
