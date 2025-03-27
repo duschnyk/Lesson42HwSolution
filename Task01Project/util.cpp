@@ -104,7 +104,11 @@ int get_sum_of_even_elements(int* array, int size) {
 int get_sum_of_odd_elements(int* array, int size) {
 	int sum = 0;
 
-
-
+	for (int i = 0; i < size; i++)
+	{
+		if (array[i] % 2 != 0) {
+			sum += array[i];
+		}
+	}
 	return sum;
 }

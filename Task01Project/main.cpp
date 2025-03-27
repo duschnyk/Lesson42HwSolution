@@ -24,10 +24,18 @@ int main() {
 	//	<< get_product_of_even_indexses(array, size) << endl;
 
 
-	//level(a)#3
+	////level(a)#3
+	//normal_init(array, size, -100, 100);
+	//cout << "Vector: " << convert(array, size) << endl;
+	//cout << "Sum of even elements: " << get_sum_of_even_elements(array, size) << endl;
+
+
+	//level(a)#4
 	normal_init(array, size, -100, 100);
 	cout << "Vector: " << convert(array, size) << endl;
-	cout << "Sum of even elements: " << get_sum_of_even_elements(array, size) << endl;
+	cout << "Sum of odd elements: " << get_sum_of_odd_elements(array, size) << endl;
+
+
 	
 	return 0;
 }
