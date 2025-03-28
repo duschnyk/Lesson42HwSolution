@@ -2,7 +2,7 @@
 #include "logic.h"
 
 int main() {
-	int array[BUF];
+	int array[BUF]{2, 3, 1, 4, 0, 3, 4, 5, 3, 4, 5, 0, 5, 6};
 	int size;
 
 	cout << "input size: ";
@@ -37,13 +37,17 @@ int main() {
 	//cout << "Sum of odd elements: " << get_sum_of_odd_elements(array, size) << endl;
 
 
-	//level(b)#1
-	normal_init(array, size, -100, 100);
+	////level(b)#1
+	//normal_init(array, size, -100, 100);
+	//cout << "Vector: " << convert(array, size) << endl;
+	//bubble_sort(array, size, true);
+	//cout << "Vector after sorting: " << convert(array, size) << endl;
+
+
+	//level(b)#2	
 	cout << "Vector: " << convert(array, size) << endl;
-	bubble_sort(array, size, true);
-	cout << "Vector after sorting: " << convert(array, size) << endl;
+	cout << "sum of vector elements between first and last zeroes: " 
+		<< get_sum_between_indexses(array, size) << endl;
 
-
-	
 	return 0;
 }

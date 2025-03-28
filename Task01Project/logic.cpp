@@ -70,3 +70,41 @@ int get_sum_of_odd_elements(int* array, int size) {
 	}
 	return sum;
 }
+
+//task02b
+
+int get_first_zero_index(int* array, int size) {
+	
+	for (int i = 0; i < size; i++)
+	{
+		if (array[i] == 0) {
+			return i;
+		}
+	}
+	return -1;
+}
+
+int get_last_zero_index(int* array, int size) {
+	
+	for (int i = size - 1; i >= 0; i--)
+	{
+		if (array[i] == 0) {
+			return i;
+		}
+	}
+	return -1;
+}
+
+int get_sum_between_indexses(int* array, int size) {
+	int sum = 0;
+
+	int first_zero_index = get_first_zero_index(array, size);
+
+	int last_zero_index = get_last_zero_index(array, size);
+
+	for (int i = first_zero_index + 1; i < last_zero_index; i++)
+	{
+		sum += array[i];
+	}
+	return sum;
+}
