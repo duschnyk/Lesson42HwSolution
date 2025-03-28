@@ -1,4 +1,5 @@
 #include "util.h"
+#include "logic.h"
 
 int main() {
 	int array[BUF];
@@ -30,10 +31,17 @@ int main() {
 	//cout << "Sum of even elements: " << get_sum_of_even_elements(array, size) << endl;
 
 
-	//level(a)#4
+	////level(a)#4
+	//normal_init(array, size, -100, 100);
+	//cout << "Vector: " << convert(array, size) << endl;
+	//cout << "Sum of odd elements: " << get_sum_of_odd_elements(array, size) << endl;
+
+
+	//level(b)#1
 	normal_init(array, size, -100, 100);
 	cout << "Vector: " << convert(array, size) << endl;
-	cout << "Sum of odd elements: " << get_sum_of_odd_elements(array, size) << endl;
+	bubble_sort(array, size, true);
+	cout << "Vector after sorting: " << convert(array, size) << endl;
 
 
 	
